@@ -1,0 +1,73 @@
+{
+  "name": "Account",
+  "options": {
+    "idInjection": false,
+    "mysql": {
+      "schema": "training",
+      "table": "account"
+    },
+    "relations": {}
+  },
+  "properties": {
+    "id": {
+      "type": "Number",
+      "id": 1,
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "userid": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "userid",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "accountnumber": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "accountNumber",
+        "dataType": "varchar",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {
+    "rel_user": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true,
+        "disableInclude": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
