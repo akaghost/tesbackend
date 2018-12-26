@@ -5,8 +5,8 @@
   },
   "training": {
     "host": "localhost",
-    "port": 3306,
-    "url": "",
+    "port": "3306",
+    "url": "postgres://mmcvndsjdiuiwa:e07cc9aef9ee0d240367f36fbeeaf70e42770e57866c208b8ac4ff96802b9af9@ec2-54-235-247-209.compute-1.amazonaws.com:5432/dampb5ffdqhnl3",
     "database": "training",
     "password": "",
     "name": "training",
